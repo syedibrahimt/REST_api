@@ -1,8 +1,14 @@
+//importing the requires modules
 const Joi = require('joi');
 const express = require('express');
-
+const log = require('./middlewares/logger');
 const app = express();
+
+//Middleware
 app.use(express.json());
+
+//Custom middleware
+app.use(log);
 
 const genres=[
     {id:1, name:'ar.rahman'},
