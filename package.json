@@ -1,15 +1,18 @@
-{
-  "name": "vidly",
-  "version": "1.0.0",
-  "description": "a video renting application",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "syed ibrahim",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.4",
-    "joi": "^14.3.0"
-  }
-}
+ {
+     "name": "REST",
+     "version": "1.0.0",
+     "description": "Application to explain how rest works",
+     "main": "index.js",
+     "scripts": {
+         "test": "echo \"Error: no test specified\" && exit 1"
+     },
+     "author": "syed ibrahim",
+     "license": "ISC",
+     "dependencies": {
+         "config": "^3.0.1",
+         "express": "^4.16.4",
+         "joi": "^14.3.0",
+         "morgan": "^1.9.1"
+     }
+ }
+ 
