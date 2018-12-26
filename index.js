@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const Joi = require('joi');
 const express = require('express');
 const log = require('./middlewares/logger');
+const config = require("config");
 const app = express();
 
 //Middleware
@@ -12,6 +13,10 @@ app.use(express.static('public'));
 if (app.get('env') === 'development') {
     app.use(morgan('tiny'));
 }
+
+console.log(`Name : ${config.get('name')}`);
+console.log(`Host : ${config.get('mail-server.host')}`);
+console.log(`Name : ${config.get('mail-server.password')}`);
 
 //Custom middleware
 app.use(log);
