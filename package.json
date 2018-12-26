@@ -1,7 +1,7 @@
 {
-  "name": "vidly",
+  "name": "REST",
   "version": "1.0.0",
-  "description": "a video renting application",
+  "description": "Application to explain how rest works",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
