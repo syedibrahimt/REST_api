@@ -4,6 +4,7 @@ const Joi = require('joi');
 const express = require('express');
 const log = require('./middlewares/logger');
 const config = require("config");
+const debug = require("debug")("app:startup");
 const app = express();
 
 //Middleware
@@ -12,6 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 if (app.get('env') === 'development') {
     app.use(morgan('tiny'));
+    debug('Morgan Enabled!!...');
 }
 
 console.log(`Name : ${config.get('name')}`);
